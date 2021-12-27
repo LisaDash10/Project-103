@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Image Identification Web App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+    
+            <center>
+              <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+              <br><br>
+                        
+        
+              <div id="name_of_family_members">
+                <h2 style="color: black; font-size: 22px;">Model is trained on:-</h2>
+                <div class="btn btn-primary" id="btn1">Father | Mother | Sister | Me</div>                                     
+              </div>
+        
+              <label>Webcam View - </label>
+              <div id="camera"></div>
+              <br><br>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="take_snapshot();" class="btn btn-info">CAPTURE IMAGE</button>
+              <br><br>
+              <button onclick="check();" class="btn btn-success">IDENTIFY IMAGE</button>
+              <br><br>
+        
+              <p style="font-size: 22px;">Family member :  <span id="result_member_name"></span> </p>
+              <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span>  </p>
+            </center>
+        
+          </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>

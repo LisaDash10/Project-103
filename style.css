@@ -1,0 +1,9 @@
+body{
+    background-color: lightpink;
+}
+
+#btn1{
+    margin-bottom: 10px;
+    width: 60%;
+    font-size: 23px;
+}
